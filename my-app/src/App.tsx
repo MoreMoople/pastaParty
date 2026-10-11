@@ -10,9 +10,6 @@ import { Bowls } from './pages/Bowls'
 import { SettingsPage } from './pages/Settings';
 import { HashRouter, Routes, Route } from 'react-router-dom';
 
-// Create a placeholder page or point to profile for now
-const SettingsPlaceholder = () => <div style={{padding: '40px', fontFamily: 'Fredoka, sans-serif'}}><h2>⚙️ Settings Coming Soon</h2></div>;
-
 // Inside your App.tsx file:
 const App: React.FC = () => {
   const navLinks = [

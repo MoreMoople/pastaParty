@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { 
   faPersonRunning, 
@@ -9,7 +8,6 @@ import {
   faChild, 
   faClock, 
   faCheck, 
-  faUserPlus 
 } from '@fortawesome/free-solid-svg-icons';
 import '../styles/Settings.css';
 
@@ -21,7 +19,6 @@ interface PendingApproval {
 }
 
 export const SettingsPage: React.FC = () => {
-  const navigate = useNavigate();
 
   // Mock State for Hackathon presentation tracking
   const [timeRestriction, setTimeRestriction] = useState<string>('8:00 PM - 7:00 AM');
