@@ -1,0 +1,219 @@
+/* Core Viewport setup wrapper */
+.explore-container {
+    max-width: 680px; /* Keeps the feed centered like popular social media apps */
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* Header typography styles */
+.explore-header h1 {
+    font-size: 2.2rem;
+    color: #41362A;
+    margin-bottom: 4px;
+}
+
+.explore-header p {
+    color: #8F6D51;
+    margin-top: 0;
+    font-size: 1.1rem;
+}
+
+/* Bowls Filter Container Layout */
+.bowls-section {
+    margin: 24px 0 32px 0;
+    background-color: #fdfaf6;
+    padding: 16px;
+    border-radius: 12px;
+    border: 1px solid rgba(143, 109, 81, 0.15);
+}
+
+.bowls-section h3 {
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-size: 1.1rem;
+    color: #41362A;
+}
+
+.bowls-track {
+    display: flex;
+    gap: 12px;
+    overflow-x: auto; /* Adds natural swiping movement actions for phone users */
+    padding-bottom: 4px;
+}
+
+/* Warm rounded Bowl selector pill options */
+.bowl-pill {
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 600;
+    font-size: 0.95rem;
+    background-color: #EBC89C;
+    color: #41362A;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px; /* Fully rounded capsule style for category tags */
+    cursor: pointer;
+    white-space: nowrap;
+    transition: all 0.2s ease;
+}
+
+.bowl-pill:hover {
+    background-color: #A5BE7E;
+    transform: translateY(-1px);
+}
+
+.bowl-pill.active-bowl {
+    background-color: #A5BE7E;
+    color: #41362A;
+    font-weight: 700;
+    box-shadow: 0 2px 6px rgba(165, 190, 126, 0.4);
+}
+
+/* Main timeline wrapper layout tracking */
+.posts-feed {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+/* Rectangle card structures with rounded corners */
+.post-card {
+    background-color: #FFFFFF;
+    border: 1px solid rgba(143, 109, 81, 0.15);
+    border-radius: 14px; /* Distinct rectangular layout rounded frame */
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(65, 54, 42, 0.05);
+}
+
+/* Post component header layouts */
+.post-card-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 14px;
+}
+
+/* Circle avatar rules */
+.author-avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%; /* Keeps profile photos perfectly circular */
+    object-fit: cover;
+    border: 2px solid #EBC89C;
+}
+
+.author-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.author-name {
+    margin: 0;
+    font-size: 1.15rem;
+    color: #41362A;
+    font-weight: 700;
+}
+
+.post-meta {
+    font-size: 0.85rem;
+    color: #8F6D51;
+}
+
+.bowl-tag {
+    background-color: rgba(143, 109, 81, 0.1);
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+/* Post text specifications */
+.post-text {
+    font-size: 1.05rem;
+    line-height: 1.5;
+    color: #41362A;
+    margin: 0 0 14px 0;
+}
+
+/* Media handling aspect boxes */
+.post-media-box {
+    width: 100%;
+    border-radius: 8px; /* Clean rectangular corners inside card element */
+    overflow: hidden;
+    background-color: #f7f5f2;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.post-media-asset {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Empty states template lookups */
+.empty-feed {
+    text-align: center;
+    padding: 40px;
+    color: #8F6D51;
+    font-style: italic;
+    background: #FFFFFF;
+    border-radius: 14px;
+    border: 1px dashed rgba(143, 109, 81, 0.3);
+}
+
+/* Actions wrapper at the base of the card */
+.post-actions-panel {
+    margin-top: 16px;
+    padding-top: 14px;
+    border-top: 1px dashed rgba(143, 109, 81, 0.15);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.action-prompt {
+    font-size: 0.85rem;
+    color: #8F6D51;
+    font-weight: 600;
+}
+
+/* Reactions track row layout */
+.reactions-container {
+    display: flex;
+    gap: 8px;
+}
+
+/* Base style for individual reaction icons */
+.reaction-button {
+    font-family: 'Fredoka', sans-serif;
+    background-color: #fdfaf6;
+    border: 1px solid rgba(143, 109, 81, 0.2);
+    padding: 6px 14px;
+    border-radius: 20px; /* Pillow oval shape */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.reaction-button:hover {
+    background-color: #EBC89C;
+    transform: scale(1.05);
+}
+
+/* Activated active reaction state */
+.reaction-button.reacted {
+    background-color: #A5BE7E; /* Matches your accent active green */
+    border-color: #A5BE7E;
+    box-shadow: 0 2px 6px rgba(165, 190, 126, 0.3);
+}
+
+.reaction-emoji {
+    font-size: 1.1rem;
+}
+
+.reaction-check {
+    font-size: 0.75rem;
+    color: #41362A;
+    font-weight: 700;
+}

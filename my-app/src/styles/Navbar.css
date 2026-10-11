@@ -1,25 +1,126 @@
-nav {
-    background-color: #333;
-    color: white;
+/* Container holds everything */
+nav.navbar-container {
+    background-color: #8F6D51;
+    color: #FFFBF5;
+    padding: 10px 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
 
-ul {
+/* Brand logo styling on the far left */
+.navbar-logo {
+    font-family: 'Chicle', serif; 
+    color: #FFFBF5;
+    text-decoration: none;
+    font-size: 2.2rem;
+    padding-right: 40px; 
+}
+
+.navbar-logo:hover {
+    color: #FFFBF5;
+    text-decoration: none;
+}   
+
+/* Menu wrapper */
+ul.navbar-menu {
     list-style-type: none;
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: space-around;
+    align-items: center;
+    gap: 12px; 
+    width: 100%;
 }
 
 li {
-    padding: 15px;
+    padding: 0; 
 }
 
-a {
-    color: white;
+/* 
+   THE CATCH-ALL FLEX ALIGNMENT FIX: 
+   Pushes settings-item and EVERYTHING following it (logout-item) to the far right!
+*/
+li.settings-item {
+    margin-left: auto;
+}
+
+li.logout-item {
+    margin-left: 0; /* Clear previous raw single pushing rule constraints */
+}
+
+/* Buttons get Fredoka so they are clean, chunky, and legible */
+.navbar-menu a {
+    font-family: 'Fredoka', sans-serif;
+    display: inline-block;
+    color: #41362A;
     text-decoration: none;
+    background-color: #EBC89C;
+    padding: 8px 18px;        
+    border-radius: 6px;       
+    font-weight: 700;       
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease-in-out;
 }
 
-a:hover {
-    text-decoration: underline;
+.navbar-menu a:hover {
+    text-decoration: none;    
+    background-color: #A5BE7E; 
+    transform: translateY(-1px); 
+}
+
+.navbar-menu a.active {
+    background-color: #A5BE7E; 
+    color: #41362A;            
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+/* Mobile responsive alignments */
+@media (max-width: 768px) {
+    nav.navbar-container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+        padding: 15px;
+    }
+
+    .navbar-logo {
+        margin-right: 0;
+        padding-right: 0;
+    }
+
+    ul.navbar-menu {
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+    }
+
+    li {
+        width: 100%;
+    }
+
+    li.settings-item {
+        margin-left: 0; 
+    }
+
+    .navbar-menu a {
+        display: block;
+        text-align: center;
+    }
+}
+
+/* Style target for the integrated gear icon */
+.settings-item i {
+    color: #41362A; /* Match your website signature deep brown text */
+    opacity: 0.8;
+    transition: transform 0.3s ease;
+}
+
+/* Make it full opacity and rotate elegantly on navbar link active/hover states */
+.settings-item:hover i,
+.settings-item .active i {
+    color: #A5BE7E; /* Pop into your accent green theme tone */
+    opacity: 1;
+    transform: rotate(45deg);
 }

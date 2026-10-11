@@ -1,0 +1,134 @@
+/* Core Viewport setup wrapper */
+.profile-container {
+    max-width: 680px;
+    margin: 40px auto;
+    padding: 0 20px;
+    font-family: 'Fredoka', sans-serif;
+}
+
+/* Header Banner Styling */
+.profile-header-card {
+    position: relative;
+    background-color: #FFFFFF;
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid rgba(143, 109, 81, 0.15);
+}
+
+.banner-wrapper {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    background-color: #EBC89C;
+}
+
+.profile-banner {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Overlapping Avatar Row Logic */
+.avatar-meta-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0 24px 16px 24px;
+    margin-top: -60px; /* Pulls avatar halfway up into the banner container layer */
+}
+
+.profile-avatar-circle {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #FFFFFF; /* White mask barrier around profile edge shadow */
+    box-shadow: 0 4px 10px rgba(65, 54, 42, 0.15);
+    background-color: #FFFFFF;
+}
+
+/* Intimate Utility styling for action control paths */
+.edit-profile-btn {
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 600;
+    font-size: 0.9rem;
+    background-color: #fdfaf6;
+    color: #41362A;
+    border: 1px solid rgba(143, 109, 81, 0.3);
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.edit-profile-btn:hover {
+    background-color: #EBC89C;
+    border-color: #EBC89C;
+}
+
+/* Profile Bio Box layout definitions */
+.profile-bio-box {
+    margin-top: 16px;
+    background-color: #FFFFFF;
+    border: 1px solid rgba(143, 109, 81, 0.15);
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: 0 4px 12px rgba(65, 54, 42, 0.03);
+}
+
+.profile-name {
+    margin: 0;
+    font-size: 1.6rem;
+    color: #41362A;
+    font-weight: 700;
+}
+
+.profile-handle {
+    font-size: 0.95rem;
+    color: #8F6D51;
+    font-weight: 500;
+}
+
+.profile-bio-text {
+    font-size: 1.05rem;
+    line-height: 1.5;
+    color: #41362A;
+    margin: 16px 0;
+}
+
+.profile-stats {
+    display: flex;
+    gap: 12px;
+}
+
+.stat-pill {
+    background-color: rgba(143, 109, 81, 0.08);
+    color: #41362A;
+    font-weight: 600;
+    font-size: 0.9rem;
+    padding: 6px 14px;
+    border-radius: 20px;
+}
+
+/* User Profile Personal Feed track */
+.profile-feed-section {
+    margin-top: 32px;
+}
+
+.feed-title {
+    font-size: 1.3rem;
+    color: #41362A;
+    margin-bottom: 16px;
+    font-weight: 700;
+}
+
+/* Explicit Visibility Privacy Tag design */
+.privacy-badge {
+    background-color: rgba(165, 190, 126, 0.25); /* Warm target soft green color block */
+    color: #41362A;
+    padding: 3px 8px;
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 0.8rem;
+    margin-left: 4px;
+}

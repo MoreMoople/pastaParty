@@ -1,0 +1,339 @@
+/* ==========================================
+   EMERGENCY QUICK ESCAPE BANNER LAYOUT
+   ========================================== */
+.quick-escape-banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fce8e6; /* Noticeable but gentle warning backdrop tint */
+    border: 2px solid #ea4335; /* Sharp red tracking accent */
+    border-radius: 12px;
+    padding: 16px 20px;
+    margin-bottom: 24px;
+    gap: 16px;
+}
+
+.escape-text h3 {
+    margin: 0 0 4px 0;
+    color: #b31412;
+    font-size: 1.1rem;
+}
+
+.escape-text p {
+    margin: 0;
+    font-size: 0.88rem;
+    color: #41362A;
+    line-height: 1.4;
+}
+
+.escape-btn {
+    background-color: #ea4335;
+    color: #ffffff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 0.95rem;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: background-color 0.2s, transform 0.1s;
+    box-shadow: 0 4px 10px rgba(234, 67, 53, 0.2);
+}
+
+.escape-btn:hover {
+    background-color: #b31412;
+}
+
+.escape-btn:active {
+    transform: scale(0.97);
+}
+
+/* ==========================================
+   PANEL STRUCTURAL HEADERS & CORE WRAPPERS
+   ========================================== */
+.panel-title-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border-bottom: 2px solid rgba(143, 109, 81, 0.1);
+    padding-bottom: 12px;
+    margin-bottom: 16px;
+}
+
+.panel-title-wrapper h2 {
+    margin: 0;
+    color: #41362A;
+    font-size: 1.4rem;
+}
+
+.panel-icon-crisis {
+    color: #ea4335;
+    font-size: 1.3rem;
+}
+
+.panel-icon-kids {
+    color: #A5BE7E;
+    font-size: 1.3rem;
+}
+
+.section-intro {
+    color: #8F6D51;
+    font-size: 0.95rem;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+/* ==========================================
+   RESOURCE LINK GRID CARD ARCHITECTURE
+   ========================================== */
+.resource-links-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 16px;
+}
+
+.resource-item-box {
+    background-color: #ffffff;
+    border: 1px solid rgba(143, 109, 81, 0.12);
+    border-radius: 10px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.resource-item-box h4 {
+    margin: 0 0 6px 0;
+    color: #41362A;
+    font-size: 1.05rem;
+}
+
+.resource-item-box p {
+    margin: 0 0 16px 0;
+    font-size: 0.88rem;
+    color: #6d543e;
+    line-height: 1.4;
+}
+
+.resource-link-btn {
+    text-align: center;
+    text-decoration: none;
+    background-color: #41362A;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: background-color 0.2s;
+}
+
+.resource-link-btn:hover {
+    background-color: #ea4335;
+}
+
+.safety-btn-alt:hover {
+    background-color: #8F6D51;
+}
+
+/* ==========================================
+   KIDS PROFILE SUMMARY BLOCK
+   ========================================== */
+.child-profile-summary {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    background-color: #ffffff;
+    padding: 12px 16px;
+    border-radius: 12px;
+    border: 1px solid rgba(143, 109, 81, 0.1);
+    margin-bottom: 20px;
+}
+
+.child-avatar {
+    width: 44px;
+    height: 44px;
+    background-color: #A5BE7E;
+    color: #ffffff;
+    font-size: 1.3rem;
+    font-weight: 700;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.child-meta h3 {
+    margin: 0 0 2px 0;
+    font-size: 1.1rem;
+    color: #41362A;
+}
+
+.status-badge {
+    margin: 0;
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: #8F6D51;
+    background-color: rgba(143, 109, 81, 0.08);
+    padding: 2px 8px;
+    border-radius: 10px;
+    width: fit-content;
+}
+
+.kids-dashboard-sub {
+    margin-bottom: 20px;
+}
+
+.kids-dashboard-sub h4 {
+    margin: 0 0 10px 0;
+    color: #8F6D51;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Kids Friend Tracker Items Line Layout */
+.kids-friend-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.kids-friend-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #ffffff;
+    padding: 6px 12px;
+    border-radius: 20px;
+    border: 1px solid rgba(143, 109, 81, 0.1);
+    font-size: 0.88rem;
+    color: #41362A;
+    font-weight: 500;
+}
+
+.mini-avatar {
+    font-size: 1rem;
+}
+
+/* ==========================================
+   APPROVAL SYSTEM ROW ELEMENTS
+   ========================================== */
+.approval-list-container {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.approval-request-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 12px 16px;
+    border-radius: 8px;
+    border: 1px solid rgba(143, 109, 81, 0.1);
+    gap: 16px;
+}
+
+.request-details p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #41362A;
+    line-height: 1.4;
+}
+
+.request-details span {
+    color: #8F6D51;
+    font-weight: 600;
+}
+
+.approve-action-btn {
+    background-color: #A5BE7E;
+    color: #41362A;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 0.85rem;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: background-color 0.15s;
+}
+
+.approve-action-btn:hover {
+    background-color: #41362A;
+    color: #ffffff;
+}
+
+.no-requests-msg {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #8F6D51;
+    font-style: italic;
+}
+
+/* ==========================================
+   USAGE/LOCKOUT TRACK SELECTION PRESETS
+   ========================================== */
+.time-picker-wrapper {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    background-color: rgba(165, 190, 126, 0.08);
+    padding: 14px;
+    border-radius: 10px;
+    border: 1px dashed rgba(165, 190, 126, 0.4);
+}
+
+.picker-icon {
+    color: #8F6D51;
+    font-size: 1.1rem;
+    margin-top: 3px;
+}
+
+.picker-controls {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+}
+
+.picker-controls label {
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: #41362A;
+}
+
+.lockout-dropdown-select {
+    width: 100%;
+    max-width: 320px;
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: 1px solid rgba(143, 109, 81, 0.25);
+    background-color: #ffffff;
+    color: #41362A;
+    font-size: 0.9rem;
+    font-family: inherit;
+    outline: none;
+}
+
+.lockout-dropdown-select:focus {
+    border-color: #A5BE7E;
+}
+
+/* Responsive adjustment collapse tracking overrides */
+@media (max-width: 580px) {
+    .quick-escape-banner, .approval-request-card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .escape-btn, .approve-action-btn {
+        width: 100%;
+    }
+}

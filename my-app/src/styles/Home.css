@@ -1,0 +1,241 @@
+/* ==========================================
+    HERO BLOCK CORE BRANDING
+   ========================================== */
+.home-wrapper {
+    margin-top: 20px;
+    font-family: 'Fredoka', sans-serif;
+}
+
+.home-hero-container {
+    text-align: center;
+    max-width: 800px;
+    margin: 60px auto 40px auto;
+    padding: 0 24px;
+}
+
+.hero-badge {
+    display: inline-block;
+    background-color: rgba(165, 190, 126, 0.2);
+    color: #41362A;
+    font-weight: 700;
+    font-size: 0.9rem;
+    padding: 6px 16px;
+    border-radius: 20px;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.home-hero-container h1 {
+    font-size: 3.2rem;
+    color: #41362A;
+    margin: 0 0 16px 0;
+    line-height: 1.1;
+}
+
+.hero-subtitle {
+    font-size: 1.25rem;
+    color: #8F6D51;
+    line-height: 1.6;
+    margin: 0 auto 32px auto;
+    max-width: 660px;
+}
+
+.hero-subtitle strong {
+    color: #41362A;
+}
+
+/* Call to Action Navigation Rows */
+.hero-actions-row {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.primary-cta-btn {
+    text-decoration: none;
+    background-color: #41362A;
+    color: #ffffff;
+    padding: 14px 28px;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 1.05rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: background-color 0.2s, transform 0.1s;
+    box-shadow: 0 4px 12px rgba(65, 54, 42, 0.15);
+}
+
+.primary-cta-btn:hover {
+    background-color: #A5BE7E;
+}
+
+.primary-cta-btn:active {
+    transform: scale(0.98);
+}
+
+.secondary-cta-btn {
+    text-decoration: none;
+    background-color: #fdfaf6;
+    color: #41362A;
+    padding: 14px 28px;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 1.05rem;
+    border: 2px solid rgba(143, 109, 81, 0.2);
+    transition: all 0.2s;
+}
+
+.secondary-cta-btn:hover {
+    background-color: #ffffff;
+    border-color: #8F6D51;
+}
+
+/* ==========================================
+   FEATURES GRID OVERVIEWS
+   ========================================== */
+.home-features-wrapper {
+    margin-top: 60px;
+    margin-bottom: 80px;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2rem;
+    color: #41362A;
+    margin-bottom: 8px;
+}
+
+.section-desc {
+    color: #8F6D51;
+    font-size: 1.1rem;
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+
+.features-grid-layout {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+    text-align: left;
+}
+
+/* Inherits .bowl-card style rule logic from your pages seamlessly */
+.feature-showcase-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 28px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.feature-showcase-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(65, 54, 42, 0.06);
+    border-color: rgba(165, 190, 126, 0.4);
+}
+
+.feature-icon-circle {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    margin-bottom: 16px;
+}
+
+.green-bg {
+    background-color: rgba(165, 190, 126, 0.2);
+    color: #557033;
+}
+
+.brown-bg {
+    background-color: rgba(235, 200, 156, 0.3);
+    color: #8F6D51;
+}
+
+.feature-showcase-card h3 {
+    margin: 0 0 10px 0;
+    color: #41362A;
+    font-size: 1.3rem;
+}
+
+.feature-showcase-card p {
+    margin: 0 0 20px 0;
+    font-size: 0.92rem;
+    color: #6d543e;
+    line-height: 1.5;
+    flex-grow: 1;
+}
+
+.feature-inline-link {
+    text-decoration: none;
+    color: #8F6D51;
+    font-size: 0.9rem;
+    font-weight: 700;
+    transition: color 0.15s;
+}
+
+.feature-showcase-card:hover .feature-inline-link {
+    color: #A5BE7E;
+}
+
+/* ==========================================
+   BOTTOM CONCLUDING BANNER ACTION HOOK
+   ========================================== */
+.home-pitch-banner {
+    background-color: #41362A;
+    color: #ffffff;
+    text-align: center;
+    padding: 60px 24px;
+    border-radius: 24px;
+    max-width: 680px;
+    margin: 0 auto 80px auto;
+}
+
+.home-pitch-banner h2 {
+    font-size: 2.2rem;
+    margin: 0 0 12px 0;
+}
+
+.home-pitch-banner p {
+    font-size: 1.1rem;
+    margin: 0 0 28px 0;
+    opacity: 0.9;
+}
+
+.pitch-action-btn {
+    text-decoration: none;
+    background-color: #EBC89C;
+    color: #41362A;
+    padding: 14px 32px;
+    border-radius: 12px;
+    font-weight: 700;
+    font-size: 1.05rem;
+    display: inline-block;
+    transition: background-color 0.15s, transform 0.1s;
+}
+
+.home-pitch-banner:hover .pitch-action-btn {
+    background-color: #A5BE7E;
+}
+
+.pitch-action-btn:active {
+    transform: scale(0.98);
+}
+
+/* Collapse scaling rules for mobile views */
+@media (max-width: 600px) {
+    .home-hero-container h1 {
+        font-size: 2.4rem;
+    }
+    .primary-cta-btn, .secondary-cta-btn {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+    }
+}
